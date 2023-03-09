@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -p1a | LC_ALL=C grep -v -e '^$' -e '/$' | sort -df | sed -e 's/^/"/' -e 's/$/",/' -e '1s/^/"/' -e '$s/,$/\n/'
+ls -ma -F --file-type
